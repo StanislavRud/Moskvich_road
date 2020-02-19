@@ -51,6 +51,7 @@
     z-index: 2; }
     .road_moskvich .moskvich img {
       width: 100%;
+      transition: all 1s;
       animation: mos 1s linear 1s infinite; }
 @keyframes mos {
   100% {
@@ -78,13 +79,21 @@
     .road_moskvich .wheels .front_wheel {
       right: -270px;
       position: absolute; }
-  .road_moskvich .nenon {
+  .road_moskvich .btn {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    height: 22px;
-    width: 260px;
-    bottom: 110px;
-    left: 43%;
-    z-index: 1;
-    box-shadow: 0px 20px 30px #ff0000; }
+    cursor: pointer;
+    background-color: black; }
+  .road_moskvich .btn_front {
+    left: 50%; }
+  .road_moskvich .btn_centr {
+    left: 25%; }
+  .road_moskvich .btn_moskvich_down {
+    top: 10%; }
+  .road_moskvich .btn_down_front_wheel {
+    top: 10%; }
+  .road_moskvich .btn_down_rear_wheel {
+    top: 10%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -58,6 +58,7 @@
     z-index: 2;
     img {
       width: 100%;
+      transition: all 1s;
       animation: mos 1s linear 1s infinite;
     }
 
@@ -103,16 +104,36 @@
       position: absolute;
     }
   }
-  .nenon {
+
+  .btn {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    height: 22px;
-    width: 260px;
-    bottom: 110px;
-    //background-color: red;
-    left: 43%;
-    z-index: 1;
-    box-shadow: 0px 20px 30px #ff0000;
+    cursor: pointer;
+    background-color: black;
+
   }
+
+  .btn_front {
+    left: 50%;
+  }
+
+  .btn_centr {
+    left: 25%;
+  }
+
+  .btn_moskvich_down {
+    top: 10%;
+  }
+
+  .btn_down_front_wheel {
+    top: 10%
+  }
+
+  .btn_down_rear_wheel {
+    top: 10%;
+  }
+
 
 }
 

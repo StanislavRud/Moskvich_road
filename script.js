@@ -9,32 +9,44 @@ let btnUpFrontWheel = document.querySelector('.btn_up_front_wheel'),
 
 function upFront() {
     moskvich.style.animation = 'none';
-    moskvich.style.transform = 'rotate(-4deg)';
+    if ((moskvich.style.transform === 'rotate(4deg)')){
+        moskvich.style.transform = 'rotate(0deg)';
+        moskvichBody.style.bottom = '120px';
+    } else {
+        moskvich.style.transform = 'rotate(-4deg)'
+    };
 }
 
 function downFront () {
     moskvich.style.animation = 'none';
-
-    if ((moskvichBody.style.bottom = '120px') || (moskvichBody.style.bottom = '100px')) {
-
+    if ((moskvich.style.transform === 'rotate(-4deg)')){
+        moskvich.style.transform = 'rotate(0deg)';
+        moskvichBody.style.bottom = '100px';
+    } else {
         moskvich.style.transform = 'rotate(4deg)'
-    } else
+    };
 
-    moskvich.style.transform = 'rotate(0deg)';
+
 }
 
 function upRear () {
     moskvich.style.animation = 'none';
-    moskvich.style.transform = 'rotate(4deg)';
+    if ((moskvich.style.transform === 'rotate(-4deg)')){
+        moskvich.style.transform = 'rotate(0deg)';
+        moskvichBody.style.bottom = '120px';
+
+    } else {
+        moskvich.style.transform = 'rotate(4deg)'
+    };
 }
 function downRear () {
     moskvich.style.animation = 'none';
-    if ((moskvichBody.style.bottom = '120px') || (moskvichBody.style.bottom = '100px')) {
-        moskvich.style.transform = 'rotate(-4deg)';
-    }else {
+    if ((moskvich.style.transform === 'rotate(4deg)')){
         moskvich.style.transform = 'rotate(0deg)';
-    }
-
+        moskvichBody.style.bottom = '100px';
+    } else {
+        moskvich.style.transform = 'rotate(-4deg)'
+    };
 }
 
 function upCar () {

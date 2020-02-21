@@ -56,6 +56,7 @@
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
+    transition: all 1s;
     img {
       width: 100%;
       transition: all 1s;
@@ -105,34 +106,57 @@
     }
   }
 
-  .btn {
-    width: 50px;
-    height: 50px;
+  .block_keyboards {
+    width: 300px;
+    height: 14%;
     position: absolute;
-    cursor: pointer;
-    background-color: black;
+    left: calc(50% - 150px);
+    top: calc(50% - 12%);
+    display: flex;
+    justify-content: space-between;
 
+    .btn {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+      transition: 0.4s;
+      &:hover {
+        color: blue;
+        box-shadow: 0 0 17px rgba(5,20,255,0.75);
+        border-color: blue;
+      }
+    }
+
+
+
+    .front_wheels, .all_car, .rear_wheels {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+
+    .front_wheels{
+
+    }
+
+    .all_car {
+    }
+
+    .rear_wheels {
+
+    }
   }
 
-  .btn_front {
-    left: 50%;
-  }
-
-  .btn_centr {
-    left: 25%;
-  }
-
-  .btn_moskvich_down {
-    top: 10%;
-  }
-
-  .btn_down_front_wheel {
-    top: 10%
-  }
-
-  .btn_down_rear_wheel {
-    top: 10%;
-  }
 
 
 }

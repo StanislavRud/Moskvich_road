@@ -48,7 +48,8 @@
     bottom: 100px;
     transform: translateX(-50%);
     position: absolute;
-    z-index: 2; }
+    z-index: 2;
+    transition: all 1s; }
     .road_moskvich .moskvich img {
       width: 100%;
       transition: all 1s;
@@ -79,21 +80,35 @@
     .road_moskvich .wheels .front_wheel {
       right: -270px;
       position: absolute; }
-  .road_moskvich .btn {
-    width: 50px;
-    height: 50px;
+  .road_moskvich .block_keyboards {
+    width: 300px;
+    height: 14%;
     position: absolute;
-    cursor: pointer;
-    background-color: black; }
-  .road_moskvich .btn_front {
-    left: 50%; }
-  .road_moskvich .btn_centr {
-    left: 25%; }
-  .road_moskvich .btn_moskvich_down {
-    top: 10%; }
-  .road_moskvich .btn_down_front_wheel {
-    top: 10%; }
-  .road_moskvich .btn_down_rear_wheel {
-    top: 10%; }
+    left: calc(50% - 150px);
+    top: calc(50% - 12%);
+    display: flex;
+    justify-content: space-between; }
+    .road_moskvich .block_keyboards .btn {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+      transition: 0.4s; }
+      .road_moskvich .block_keyboards .btn:hover {
+        color: blue;
+        box-shadow: 0 0 17px rgba(5, 20, 255, 0.75);
+        border-color: blue; }
+    .road_moskvich .block_keyboards .front_wheels, .road_moskvich .block_keyboards .all_car, .road_moskvich .block_keyboards .rear_wheels {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

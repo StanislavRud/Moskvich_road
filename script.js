@@ -67,5 +67,27 @@ btnDownRearWheel.addEventListener('click', downRear);
 btnUpCar.addEventListener('click', upCar);
 btnDownCar.addEventListener('click', downCar);
 
+let higway = document.querySelector('.higway');
 
+addEventListener('keydown', function (event) {
+
+    if (event.code === "Numpad1") {
+        higway.style.animation = 'higway 10s linear 1s infinite';
+    }
+
+    if (event.code === "Numpad4") {
+        higway.style.animation = 'higway 1s linear 1s infinite';
+    }
+
+
+    if (event.key === "ArrowUp"){
+        console.log('keyup')
+        higway.style.animation = 'higway 1s linear 1s infinite';
+    } else if (event.key === "ArrowDown") {
+        higway.style.animation = 'higway 10s linear 1s infinite';
+        console.log('keyDown');
+    }
+        console.log(event);
+
+});
 

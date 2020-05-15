@@ -87,7 +87,8 @@
     left: calc(50% - 150px);
     top: calc(50% - 12%);
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    z-index: 1; }
     .road_moskvich .block_keyboards .btn {
       width: 50px;
       height: 50px;

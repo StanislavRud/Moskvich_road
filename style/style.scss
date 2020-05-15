@@ -114,6 +114,7 @@
     top: calc(50% - 12%);
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 
     .btn {
       width: 50px;
